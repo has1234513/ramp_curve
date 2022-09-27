@@ -31,8 +31,8 @@
           :class="(i >= 80 && i <= 150) ? 'arc-piece' : 'arc-not'"
           :style="{
             transform: (i >= 80 && i <= 150) ? `rotate(${(index - 120) + 50}deg)` : '',
-            marginLeft: i === 151 ? '166.1px': '',
-            marginTop: (i >=150 && i <= 1000)? '19.9px' : ''
+            marginLeft: i === 151 ? '170.1px': '',
+            marginTop: (i >=150 && i <= 1000)? '0.3px' : ''
           }"
         >
           <div 
@@ -159,7 +159,7 @@ export default {
     --w: calc(var(--r) * 1.2);
     /* the top of the book is 20% out further than the edge of the circle */
     width: calc(2 * var(--w));
-    height: calc(2 * var(--w));
+    height: calc(1.662 * var(--w));
     margin: 0;
     padding: 0 0 0 0;
     transform: rotate(0);

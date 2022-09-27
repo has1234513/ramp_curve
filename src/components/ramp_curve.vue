@@ -9,7 +9,7 @@
 
       <div class="progress-bar part2">
 
-        <div class="end-part" :style="{transform: 'rotate(290deg)'}">
+        <div class="end-part" :style="{transform: 'rotate(-70deg)'}">
           <div 
             v-for="(i, index)  in progress.slice(0, 80)" 
             :key="i" 
@@ -31,8 +31,8 @@
           :class="(i >= 80 && i <= 150) ? 'arc-piece' : 'arc-not'"
           :style="{
             transform: (i >= 80 && i <= 150) ? `rotate(${(index - 120) + 50}deg)` : '',
-            marginLeft: i === 151 ? '170.1px': '',
-            marginTop: (i >=150 && i <= 1000)? '0.3px' : ''
+            marginLeft: i === 151 ? '166.1px': '',
+            marginTop: (i >=150 && i <= 1000)? '0.2px' : ''
           }"
         >
           <div 
@@ -83,8 +83,8 @@ export default {
   }
 
   .box {
-    width: 1000px;
-    height: 100px;
+    width: 200px;
+    height: 50px;
     border: 1px solid black;
     display: flex;
     padding: 0 0 0 0;
@@ -143,7 +143,7 @@ export default {
     display:flex;
     align-items: flex-start;
     position: absolute;
-    margin: 55px 73px 0 0;
+    margin: 36.2px 75.6px 0 0;
   }
 
   /* ------------------------ progress bar arc -------------------------- */
@@ -159,7 +159,7 @@ export default {
     --w: calc(var(--r) * 1.2);
     /* the top of the book is 20% out further than the edge of the circle */
     width: calc(2 * var(--w));
-    height: calc(1.662 * var(--w));
+    height: calc(1.67 * var(--w));
     margin: 0;
     padding: 0 0 0 0;
     transform: rotate(0);

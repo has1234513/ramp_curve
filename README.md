@@ -1,18 +1,24 @@
 # ramp_curve
 
-### Install npm
-
+## Project setup
 ```
-Be sure to have npm installed on you system
-```
-
-## To install run the following in your terminal run
-
-```bash
 npm install
 ```
 
-### To run the app use the following command in your terminal
-
-```bash
+### Compiles and hot-reloads for development
+```
 npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

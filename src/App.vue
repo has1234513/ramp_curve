@@ -1,15 +1,15 @@
 <template>
   
-  <HelloWorld msg="Ramp Curve test"/>
+  <RampCurved msg="Ramp Curve test"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import RampCurved from './components/ramp_curve.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    RampCurved
   },
   data () {
     return {
